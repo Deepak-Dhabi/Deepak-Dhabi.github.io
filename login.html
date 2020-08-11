@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+    <!-- Custom Style-->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+       <div class="input-icon">
+        <img src="./assets/user.svg">
+                            </div>
+        <div class="line"></div>
+        <div class="text">
+            User Login
+        </div>
+    </header>
+    <div class="loginform" id="loginform">
+    <div class="container">
+        
+                    
+          
+                <div class="col login" id="login-form"> 
+
+                    <button type="button" class="btn btn-signup" id="signup-page" onclick="signupForm()">Sign Up</button>
+                    <form>
+                        <div class="titles">
+                            <h3>Login</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email/Username" class="form-input" id="eimp"/>
+                           
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-input" id="pimp"/>
+                        </div>
+                        <button type="submit" class="btn btn-login" id="loginbtn">Login</button>
+                    </form>
+                    
+                </div>
+                <div class="col signup" id="signup-form">
+
+                    <button type="button" class="btn btn-login" id="login-page" onclick="loginForm()">Log In</button>
+                    <form>
+                        <div class="titles1">
+                            <h3>Visit at our place!!</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-input" id="email">
+                      
+                        </div><div class="form-group">
+                                <input type="text" placeholder="Full Name" class="form-input" id="name">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" placeholder="Username" class="form-input" id="usrname">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-input" id="password">
+                           
+                      </div>
+                      
+                        <button type="submit" class="btn btn-signup" id="signupbtn">Sign Up</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    
+
+    <script>
+        
+
+        $(document).ready(function () {
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                items: 1
+            });
+        });
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCbbO66LvmOf-v_Ydh9d5oNoQyV0Z415ik",
+    authDomain: "loginuser-efdbd.firebaseapp.com",
+    databaseURL: "https://loginuser-efdbd.firebaseio.com",
+    projectId: "loginuser-efdbd",
+    storageBucket: "loginuser-efdbd.appspot.com",
+    messagingSenderId: "416931092358",
+    appId: "1:416931092358:web:e97873682410109f70be07"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+</script>
+<script type="text/javascript" src="login.js"></script>
+</body>
+
+</html>

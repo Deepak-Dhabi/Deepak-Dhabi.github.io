@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="logout()">logout</button>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCbbO66LvmOf-v_Ydh9d5oNoQyV0Z415ik",
+    authDomain: "loginuser-efdbd.firebaseapp.com",
+    databaseURL: "https://loginuser-efdbd.firebaseio.com",
+    projectId: "loginuser-efdbd",
+    storageBucket: "loginuser-efdbd.appspot.com",
+    messagingSenderId: "416931092358",
+    appId: "1:416931092358:web:e97873682410109f70be07"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
