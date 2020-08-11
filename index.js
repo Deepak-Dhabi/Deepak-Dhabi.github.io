@@ -9,7 +9,7 @@
       appt(userid, nam);
     } else {
       // No user is signed in.
-      window.location.replace("http://127.0.0.1:5500/login.html");
+     /* window.location.replace("http://127.0.0.1:5500/login.html"); */
       window.location.href = "login.html";
 
     }
